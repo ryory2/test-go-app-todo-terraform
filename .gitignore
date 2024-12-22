@@ -1,0 +1,43 @@
+# Terraformのモジュールやプラグインが格納されるディレクトリ
+.terraform/
+
+# Terraformの依存関係ロックファイル（必要に応じてコミット）
+#.terraform.lock.hcl
+
+# Terraformの状態ファイル（機密情報が含まれるため除外）
+*.tfstate
+*.tfstate.*
+
+# Terraformのクラッシュログ
+crash.log
+
+# Terraformのオーバーライドファイル
+*.override.tf
+*.override.tf.json
+
+# Terraformの実行プランファイル
+*.tfplan
+
+# 自動変数ファイル（機密情報を含む可能性があるため除外）
+*.auto.tfvars
+*.auto.tfvars.json
+
+# 手動で作成する変数ファイル（機密情報を含む場合）
+# *.tfvars
+# *.tfvars.json
+
+# 環境ごとの設定ファイル（機密情報を含む場合）
+env/*.tfvars
+env/*.tfvars.json
+
+# IDEやエディタの設定ファイル（例：VSCode）
+# .vscode/
+# *.code-workspace
+
+# OS固有のファイル
+.DS_Store
+Thumbs.db
+
+# その他の一時ファイル
+*.bak
+*.tmp
